@@ -79,7 +79,7 @@ public class myArrayList<T> {
 
     }
 
-    //addFirt
+    //addFirst
     public void addFist(T value) {
         addByIndex(value, 0);
     }
