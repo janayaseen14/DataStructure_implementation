@@ -1,10 +1,12 @@
 package javaapplication2;
+
 import java.util.*;
-public class MyQueue<T>{
 
-    MyLinkedList lst;
+public class MyQueueLinked<T> {
 
-    public MyQueue() {
+    MyLinkedList<T> lst;
+
+    public MyQueueLinked() {
         lst = new MyLinkedList();
     }
 
@@ -12,12 +14,12 @@ public class MyQueue<T>{
     public int size() {
         return lst.Size();
     }
-    
+
     //isEmpty
     public boolean isEmpty() {
         return lst.isEmpty();
     }
-    
+
     //addLast
     public void enqueue(T val) {
         lst.add(val);
