@@ -15,6 +15,14 @@ public class MyLinkedList<T> {
         return head == null;
     }
 
+    //getFirst
+    public T getFirst() {
+        if (size == 0) {
+            return null;
+        }
+        return (T) head.getVal();
+    }
+    
     //addLast
     void add(T val) {
         Node x = new Node(val);
